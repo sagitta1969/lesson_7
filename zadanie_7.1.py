@@ -8,10 +8,10 @@ class Matrix:
     def __add__(self, other):
         result = []
         num = []
-        if len(self.args) == len(other.args): #проверка длинн матриц
-            for i in range(len(self.args)): # перебирает елементы списка
-                for j in range(len(self.args[i])): # перебирает элементы вложенных списков
-                    num.append(self.args[i][j] + other.args[i][j]) # формирует список num
+        if len(self.args) == len(other.args):
+            for i in range(len(self.args)):
+                for j in range(len(self.args[i])):
+                    num.append(self.args[i][j] + other.args[i][j])
                     if len(num) == len (self.args[i]):
                         result.append(num)
                         num = []
